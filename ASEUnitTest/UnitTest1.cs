@@ -8,6 +8,7 @@ namespace ASEUnitTest
     public class UnitTest1
     {
         [TestMethod]
+        //checking cursor move to right value//
         public void Test_Moveto_Right_value()
         {
             var v = new Validate();
@@ -15,6 +16,7 @@ namespace ASEUnitTest
             Assert.AreEqual(result[0], "moveto", result[1], "10", result[2], "10");
 
         }
+        //checking move to wrong value//
         public void Test_Moveto_Wrong_value()
         {
             var v = new Validate();
@@ -22,6 +24,7 @@ namespace ASEUnitTest
             Assert.AreEqual(result[0], "errormoveto");
 
         }
+        //checking draw to right value//
         public void Test_Drawto_Right_value()
         {
             var v = new Validate();
